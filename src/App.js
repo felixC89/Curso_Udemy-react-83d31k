@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.css';
-import HolaMundo, { AdiosMundo } from './Componentes/HolaMundo.js';
+import Saludo, { Despedida } from './Componentes/Saludar.js';
 
 export default function App() {
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
       <p>
-        <HolaMundo />
+        <Saludo name="Felix" edad="25" />
         Start editing to see some magic happen :)
-        <AdiosMundo />
+        <Despedida name="Antonio" edad="31" />
       </p>
     </div>
   );
