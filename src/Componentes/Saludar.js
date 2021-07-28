@@ -27,10 +27,11 @@ export function Despedida(props) {
 
 export function SaludarUser(props) {
   const { UserInfo, Greet } = props;
+  const { nombre = 'Anonimo' } = UserInfo;
 
   return (
     <div>
-      <button onClick={() => Greet(UserInfo.nombre)}>Saludar</button>
+      <button onClick={() => Greet(nombre)}>Saludar</button>
     </div>
   );
 }
