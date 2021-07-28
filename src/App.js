@@ -1,5 +1,6 @@
 import React from 'react';
-import './style.css';
+//import './style.css';
+import { Button } from 'react-bootstrap';
 import Saludo, { Despedida, SaludarUser } from './Componentes/Saludar.js';
 
 const Saludar = nombre => {
@@ -23,6 +24,18 @@ export default function App() {
       </p>
 
       <SaludarUser UserInfo={useri} Greet={Saludar} />
+
+      <hr />
+
+      <h1>React Bootstrap</h1>
+      <Button
+        variant="primary"
+        onClick={() => {
+          alert('Hola');
+        }}
+      >
+        Saludo
+      </Button>
     </div>
   );
 }
