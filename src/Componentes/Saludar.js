@@ -14,11 +14,12 @@ function Saludo(props) {
 }
 
 export function Despedida(props) {
-  console.log(props.name);
+  console.log(props);
   return (
     <div>
       <h1>
-        Adios {props.name} tiene {props.edad} años.
+        Adios {props.UserInfo.nombre} tiene {props.UserInfo.edad} años y le
+        gusta el color {props.UserInfo.color}.
       </h1>
     </div>
   );

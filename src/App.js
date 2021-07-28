@@ -3,13 +3,19 @@ import './style.css';
 import Saludo, { Despedida } from './Componentes/Saludar.js';
 
 export default function App() {
+  const useri = {
+    nombre: 'Jose',
+    edad: 28,
+    color: 'Azul'
+  };
+
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <h1>Hola Mundo!</h1>
       <p>
         <Saludo name="Felix" edad="25" />
         Start editing to see some magic happen :)
-        <Despedida name="Antonio" edad="31" />
+        <Despedida UserInfo={useri} />
       </p>
     </div>
   );
