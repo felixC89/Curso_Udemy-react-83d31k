@@ -24,3 +24,11 @@ export function Despedida(props) {
     </div>
   );
 }
+
+export function SaludarUser(props) {
+  return (
+    <div>
+      <button onClick={()=>props.Greet(props.UserInfo.nombre)}>Saludar</button>
+    </div>
+  );
+}
