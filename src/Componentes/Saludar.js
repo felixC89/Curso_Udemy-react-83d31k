@@ -29,6 +29,7 @@ export function SaludarUser(props) {
   const { UserInfo, Greet } = props;
   const { nombre = 'Anonimo' } = UserInfo;
 
+  console.log(`Hola ${UserInfo.nombre} tienes ${UserInfo.edad} años de edad`);
   return (
     <div>
       <button onClick={() => Greet(nombre)}>Saludar</button>
