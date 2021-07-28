@@ -26,9 +26,11 @@ export function Despedida(props) {
 }
 
 export function SaludarUser(props) {
+  const { UserInfo, Greet } = props;
+
   return (
     <div>
-      <button onClick={()=>props.Greet(props.UserInfo.nombre)}>Saludar</button>
+      <button onClick={() => Greet(UserInfo.nombre)}>Saludar</button>
     </div>
   );
 }
