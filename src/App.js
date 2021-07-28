@@ -1,6 +1,7 @@
 import React from 'react';
 //import './style.css';
 import { Button } from 'react-bootstrap';
+//import { ReactComponent as ReactIcon } from './src/assets/react.svg';
 import Saludo, { Despedida, SaludarUser } from './Componentes/Saludar.js';
 
 const Saludar = nombre => {
