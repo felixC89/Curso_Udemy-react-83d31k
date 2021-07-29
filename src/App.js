@@ -2,7 +2,10 @@ import React from 'react';
 //import './style.css';
 import { Button } from 'react-bootstrap';
 //import { ReactComponent as ReactIcon } from './src/assets/react.svg';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Saludo, { Despedida, SaludarUser } from './Componentes/Saludar.js';
+import Contacto from './Pages/Contacto';
+import QuienSoy from './Pages/Quiensoy';
 
 const Saludar = nombre => {
   alert('Hola ' + nombre);
@@ -37,6 +40,25 @@ export default function App() {
       >
         Saludo
       </Button>
+      <hr />
+      <Router>
+        <div>
+          <Link to="/contacto">
+            <Button>Contacto</Button>
+          </Link>
+          <Link to="/quien-soy">
+            <Button variant="success">Quien Soy</Button>
+          </Link>
+        </div>
+        <Switch>
+          <Route path="/contacto">
+            <Contacto />
+          </Route>
+          <Route path="/quien-soy">
+            <QuienSoy />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
