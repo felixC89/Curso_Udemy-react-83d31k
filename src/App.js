@@ -22,7 +22,7 @@ export default function App() {
     <div>
       <h1>Hola Mundo!</h1>
       <p>
-        <Saludo name="Felix" edad="25" />
+        <Saludo name="Jose" edad="25" />
         Start editing to see some magic happen :)
         <Despedida UserInfo={useri} />
       </p>
